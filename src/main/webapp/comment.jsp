@@ -13,7 +13,11 @@
     </script>
     <style type="text/css">
         <!--
+        body, td, th {
+            font-size: 12px;
+        }
 
+        -->
     </style>
 </head>
 
@@ -63,11 +67,11 @@
             </td>
         </tr>
         <tr>
-            <td>评论时间：</td>
-            <td><input name='pinglunshijian' type='text' id='pinglunshijian'
-                       value="<%=new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date())%>"/>
-                &nbsp;*
-            </td>
+            <td>&nbsp;</td>
+            <td><input type="submit" name="Submit5" value="提交" onclick="return check();"/>
+                <input type="reset" name="Submit22" value="重置"/>
+                <input name="biao" type="hidden" id="biao" value="${biao}"/></td>
+        </tr>
 
     </table>
 </form>
