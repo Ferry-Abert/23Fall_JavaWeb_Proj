@@ -1,6 +1,5 @@
 package util.tld;
 
-import dao.CommDAO;
 
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.PageContext;
@@ -11,9 +10,7 @@ import java.io.StringWriter;
 import java.util.HashMap;
 import java.util.List;
 
-/**
- * jsp 页面ssm:sql 执行SQL语句
- */
+
 public class QuerySql extends SimpleTagSupport {
 
     private String var;
