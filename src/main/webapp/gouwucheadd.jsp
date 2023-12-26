@@ -7,10 +7,6 @@
 <%@ include file="head.jsp" %><%@ include file="header.jsp" %><script src="js/jquery.validate.js"></script>
 
 
-
-
-
-
 <div class="container"><!-- 使用bootstrap css框架，container定宽，并剧中 https://v3.bootcss.com/css/#overview-container -->
 
     <div class="panel panel-default">
@@ -103,12 +99,11 @@
         </div>
     </div>
 </div>
-                                                        <div class="form-group">
+                <div class="form-group">
     <div class="row">
         <label style="width: 120px;min-height:18px;text-align: right" class="col-sm-2">购买人</label>
         <div class="col-sm-8">
-            
-                                                    <input type="text" class="form-control" style="width:150px;" readonly="readonly" id="goumairen" name="goumairen" value="${sessionScope.username}"/>                                            
+            <input type="text" class="form-control" style="width:150px;" readonly="readonly" id="goumairen" name="goumairen" value="${sessionScope.username}"/>
         </div>
     </div>
 </div>
