@@ -16,7 +16,7 @@
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="htstyle/bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome CSS-->
-    <link rel="stylesheet" href="htstyle/fa/css/all.css">
+    <link rel="stylesheet" href="../../../../restV2/src/main/webapp/htstyle/fa/css/all.css">
     <link rel="stylesheet" href="htstyle/css/orionicons.css">
     <!-- theme stylesheet-->
     <link rel="stylesheet" href="htstyle/css/style.default.css" id="theme-stylesheet">
