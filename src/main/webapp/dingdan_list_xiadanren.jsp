@@ -99,7 +99,65 @@
                             <td> ${map.yongcanshijian} </td>
                             <td> ${map.zhuangtai} </td>
                             <td> ${map.beizhu} </td>
-                                            max-width: 2000px;
+                            <td> ${map.dianjia} </td>
+                            <td> ${map.xiadanren} </td>
+                            <td>
+                                    ${map.iszf}
+                                <c:choose>
+                                    <c:when test="${'否' == map.iszf }">
+
+                                        <a href="zhifu/index.jsp?id=${map.id}&biao=dingdan">
+                                            去支付
+                                        </a>
+                                    </c:when></c:choose>
+                            </td>
+                            <td align="center">${map.addtime}</td>
+                            <td align="center">
+
+                                <c:choose>
+                                    <c:when test="${map.zhuangtai == '已交付'}">
+
+                                        <a href="dingdan_detail.do?id=${map.id}">
+                                            评价
+                                        </a>
+                                    </c:when>
+                                </c:choose>
+
+
+
+
+
+                                <a href="dingdan_updt.do?id=${map.id}">修改</a>
+
+                            </td>
+                        </tr>
+                    </c:forEach>
+                    </tbody>
+                </table>
+            </div>
+
+            ${page.info}
+            <p>
+                订单金额总和: ${total.sum_dingdanjine} 　　
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+        <style>
+            /* Add your custom styles here */
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #f4f4f4;
+            }
+
+            .container {
+                max-width: 2000px;
                 margin: 0 auto;
                 padding: 20px;
             }
@@ -117,19 +175,7 @@
                 padding: 10px; /* Add padding for aesthetics */
             }
 
-            table {
-                width: 100%;
-                border-collapse: collapse;
-            }
-
-            th, td {
-                border: 1px solid #ddd;
-                padding: 8px;
-                text-align: left;
-            }
-
-            th {
-                background-color: #f2f2f2;
+         r: #f2f2f2;
             }
 
             a {
