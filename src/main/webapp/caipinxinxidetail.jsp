@@ -209,7 +209,64 @@
 </div>
 <div class="" style="">
 
+    <div class="container"><!-- 使用bootstrap css框架，container定宽，并剧中 https://v3.bootcss.com/css/#overview-container -->
 
+        <div class="row">
+
+            <div class="col-sm-12 col-md-12">
+
+
+                <div class="title-modelbox-widget">
+                    <h3 class="section-title">
+
+                        评论列表
+                    </h3>
+                    <div class="sidebar-widget-body">
+
+
+                        <div class="list-table">
+                            ${pinglunlist14 = Query.make("pinglun").where("biaoid",Info.jstl("map.id")).limit(6).order("id desc").select();""}
+                            <table width="100%" border="1" class="table table-list table-bordered table-hover">
+                                <thead>
+                                <tr align="center">
+                                    <th> 标题</th>
+                                    <th> 评分</th>
+                                    <th> 评论内容</th>
+                                    <th> 评论人</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+
+                                <c:set var="$i" value="0"/><c:forEach items="${pinglunlist14}" var="r"><c:set var="$i"
+                                                                                                              value="${$i+1}"/><c:set
+                                        var="r" value="${r}" scope="request"/>
+                                    <tr>
+                                        <td> ${r.biaoti} </td>
+                                        <td> ${r.pingfen} </td>
+                                        <td> ${r.pinglunneirong} </td>
+                                        <td> ${r.pinglunren} </td>
+
+
+                                    </tr>
+                                </c:forEach>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                    </div>
+                    <!-- /.sidebar-widget-body -->
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <!-- container定宽，并剧中结束 --></div>
 
 
 </div>
