@@ -23,7 +23,67 @@ public class Dianjia implements Serializable {
     private String shoujihaoma;
     @Column(name = "dizhi")
     private String dizhi;
+    @Column(name = "youxiang")
+    private String youxiang;
 
+    @Column(name = "addtime")
+    private String addtime;
+
+    private static final long serialVersionUID = 1L;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getZhanghao() {
+        return zhanghao;
+    }
+    public void setZhanghao(String zhanghao) {
+        this.zhanghao = zhanghao == null ? "" : zhanghao.trim();
+    }
+
+    public String getMima() {
+        return mima;
+    }
+    public void setMima(String mima) {
+        this.mima = mima == null ? "" : mima.trim();
+    }
+
+    public String getDianjiamingcheng() {
+        return dianjiamingcheng;
+    }
+    public void setDianjiamingcheng(String dianjiamingcheng) {
+        this.dianjiamingcheng = dianjiamingcheng == null ? "" : dianjiamingcheng.trim();
+    }
+
+    public String getShoujihaoma() {
+        return shoujihaoma;
+    }
+    public void setShoujihaoma(String shoujihaoma) {
+        this.shoujihaoma = shoujihaoma == null ? "" : shoujihaoma.trim();
+    }
+
+    public String getDizhi() {
+        return dizhi;
+    }
+    public void setDizhi(String dizhi) {
+        this.dizhi = dizhi == null ? "" : dizhi.trim();
+    }
+
+    public String getYouxiang() {
+        return youxiang;
+    }
+    public void setYouxiang(String youxiang) {
+        this.youxiang = youxiang == null ? "" : youxiang.trim();
+    }
+
+    public String getAddtime() {
+        return addtime;
+    }
 
     public void setAddtime(String addtime) {
         this.addtime = addtime;
