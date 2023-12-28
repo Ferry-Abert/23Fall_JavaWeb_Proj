@@ -23,22 +23,10 @@
             <form action="xueshenginsert.do" method="post" name="form1" id="form1"><!-- form 标签开始 -->
     
                                                         <div class="form-group">
-    <div class="row">
-        <label style="width: 120px;min-height:18px;text-align: right" class="col-sm-2">学号<span style="color: red;">*</span></label>
-        <div class="col-sm-8">
-            
-                                                    <input type="text" class="form-control" style="width:150px;" data-rule-required="true" data-msg-required="请填写学号" remote="checkno.do?checktype=insert&table=xuesheng&col=xuehao" data-msg-remote="内容重复了" id="xuehao" name="xuehao" value=""/>                                            
-        </div>
-    </div>
+
 </div>
                                                         <div class="form-group">
-    <div class="row">
-        <label style="width: 120px;min-height:18px;text-align: right" class="col-sm-2">密码<span style="color: red;">*</span></label>
-        <div class="col-sm-8">
-            
-                                                    <input type="password" class="form-control" style="width:150px;" data-rule-required="true" data-msg-required="请填写密码" id="mima" name="mima" value=""/>                                            
-        </div>
-    </div>
+
 </div>
                                                         <div class="form-group">
     <div class="row">
@@ -50,35 +38,13 @@
     </div>
 </div>
                                                         <div class="form-group">
-    <div class="row">
-        <label style="width: 120px;min-height:18px;text-align: right" class="col-sm-2">性别</label>
-        <div class="col-sm-8">
-            
-                                                    <select class="form-control class_xingbie5" data-value="" id="xingbie" name="xingbie" style="width:250px">
-<option value="男">男</option>
-<option value="女">女</option>
 
-</select>                                            
-        </div>
-    </div>
 </div>
                                                         <div class="form-group">
-    <div class="row">
-        <label style="width: 120px;min-height:18px;text-align: right" class="col-sm-2">年龄</label>
-        <div class="col-sm-8">
-            
-                                                    <input type="number" class="form-control" style="width:150px;" number="true" data-msg-number="输入一个有效数字" id="nianling" name="nianling" value=""/>                                            
-        </div>
-    </div>
+
 </div>
                                                         <div class="form-group">
-    <div class="row">
-        <label style="width: 120px;min-height:18px;text-align: right" class="col-sm-2">手机</label>
-        <div class="col-sm-8">
-            
-                                                    <input type="text" class="form-control" style="width:150px;" phone="true" data-msg-phone="请输入正确手机号码" id="shouji" name="shouji" value=""/>                                            
-        </div>
-    </div>
+
 </div>
                                                         <div class="form-group">
     <div class="row">

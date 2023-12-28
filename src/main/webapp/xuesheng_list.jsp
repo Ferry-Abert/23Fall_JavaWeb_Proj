@@ -22,12 +22,7 @@
         <div class="pa10 bg-warning">
             <form class="form-inline" action="?"><!-- form 标签开始 -->
     
-                <div class="form-group">
-    
-    
-                    <i class="glyphicon glyphicon-search"></i>
-                
-</div>
+
                                                             <div class="form-group">
     学号
     

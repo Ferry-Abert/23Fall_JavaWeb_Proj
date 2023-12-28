@@ -6,10 +6,6 @@
         if (r!=null) return unescape(r[2]);
         return null;
     }
-    var str=location.toString();
-    var file = "${url}";
-    var Result = Get("Result");
-    var callback = Get("callback");
     if(Result!= null){
         window.parent.document.getElementById(Result).value=file;
     }else{

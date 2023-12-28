@@ -15,7 +15,6 @@
 
 
 
-<div class="container"><!-- 使用bootstrap css框架，container定宽，并剧中 https://v3.bootcss.com/css/#overview-container -->
 
     <div class="panel panel-default">
         <div class="panel-heading">
