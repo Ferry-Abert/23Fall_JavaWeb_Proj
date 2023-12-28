@@ -52,14 +52,14 @@
                 
             
 <!--form标签结束--></form>
-        </div>
 
 
 
-        
+
+            <div class="container">
 
                     <div class="">
-                <table width="100%" border="1" class="table table-list table-bordered table-hover">
+                <table width="100%" border="1" class="table-container">
                     <thead>
                     <tr align="center">
                         <th width="60" data-field="item">序号</th>
@@ -69,13 +69,33 @@
                         <th width="220" data-field="handler">操作</th>
                     </tr>
                     </thead>
+                    <tbody>
+                    <c:set var="i" value="0" /><c:forEach items="${list}" var="map"><c:set var="i" value="${i+1}" /><c:set var="map" value="${map}" scope="request" />
+                    <tr id="${map.id}" pid="">
+                        <td width="30" align="center">
+                            <label>
+                                                                ${i}
+                            </label>
+                        </td>
+                        <td> ${map.username} </td>
+<td> ${map.pwd} </td>
+                                                                        <td align="center">${map.addtime}</td>
+                        <td align="center">
+                            
+                                                                                    <a href="admins_updt.do?id=${map.id}">修改</a>
+                            <a href="admins_delete.do?id=${map.id}" onclick="return confirm('真的要删除？')">删除</a>
+                            <!--qiatnalijne-->
+                        </td>
+                    </tr>
+                    </c:forEach>
+                    </tbody>
                 </table>
             </div>
             
         ${page.info}
         
 
-
+</div>
     </div>
 
 
@@ -90,4 +110,60 @@
 
 
 </div>
+    <style>
+        /* Add your custom styles here */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 2000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        form {
+            /* Add styles for your form */
+        }
+
+        .table-container {
+            margin-top: 20px;
+            overflow-x: auto;
+            border-radius: 10px; /* Adjust the value as needed */
+            background-color: #fff; /* Ensure background color for rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 10px; /* Add padding for aesthetics */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        table tr:hover {
+            background-color: #f0f8ff; /* Change the background color on hover */
+            cursor: pointer; /* Change the cursor to a pointer on hover */
+        }
+
+    </style>
 <%@ include file="foot.jsp" %>

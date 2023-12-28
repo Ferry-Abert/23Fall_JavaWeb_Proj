@@ -32,7 +32,25 @@
     </div>
 </div>
                                                     <div class="form-group">
+    <div class="row">
+        <label style="width: 120px;min-height:18px;text-align: right" class="col-sm-2"> </label>
+        <div class="col-sm-8">
+            
+                                            <input name="id" value="${mmm.id}" type="hidden"/>
+                        <input name="referer" value="?" type="hidden"/>
+                        <input name="updtself" value="${updtself}" type="hidden"/>
+                                        
+                    
+                    <button type="submit" class="btn btn-primary" name="Submit">
+    提交
+</button>
+                    <button type="reset" class="btn btn-default" name="Submit2">
+    重置
+</button>
 
+                
+        </div>
+    </div>
 </div>
             
 <!--form标签结束--></form>
@@ -45,6 +63,11 @@
 
 
 
+<script>
+    $(function () {
+        $('#form1').validate();
+    });
+</script>
 
 
 
