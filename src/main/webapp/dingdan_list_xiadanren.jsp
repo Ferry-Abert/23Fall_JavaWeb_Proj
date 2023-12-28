@@ -175,7 +175,19 @@
                 padding: 10px; /* Add padding for aesthetics */
             }
 
-         r: #f2f2f2;
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #f2f2f2;
             }
 
             a {
