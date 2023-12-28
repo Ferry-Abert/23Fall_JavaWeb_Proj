@@ -69,26 +69,6 @@
                         <th width="220" data-field="handler">操作</th>
                     </tr>
                     </thead>
-                    <tbody>
-                    <c:set var="i" value="0" /><c:forEach items="${list}" var="map"><c:set var="i" value="${i+1}" /><c:set var="map" value="${map}" scope="request" />
-                    <tr id="${map.id}" pid="">
-                        <td width="30" align="center">
-                            <label>
-                                                                ${i}
-                            </label>
-                        </td>
-                        <td> ${map.username} </td>
-<td> ${map.pwd} </td>
-                                                                        <td align="center">${map.addtime}</td>
-                        <td align="center">
-                            
-                                                                                    <a href="admins_updt.do?id=${map.id}">修改</a>
-                            <a href="admins_delete.do?id=${map.id}" onclick="return confirm('真的要删除？')">删除</a>
-                            <!--qiatnalijne-->
-                        </td>
-                    </tr>
-                    </c:forEach>
-                    </tbody>
                 </table>
             </div>
             
