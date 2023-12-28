@@ -29,7 +29,17 @@
     ${bhtList = Query.make("lunbotu").order("id desc").limit(5).select();""}
 
 
-
+    <div class="swiper-container" id="banner17">
+        <div class="swiper-wrapper">
+            <c:forEach items="${bhtList}" var="bht"><c:set var="bht" value="${bht}" scope="request"/>
+                <div class="swiper-slide">
+                    <div class="decoimg_b2">
+                        <a class="btn btn-" href="${bht.url}"
+                           style="background-image: url('${bht.image}'); height: 500px"></a>
+                    </div>
+                </div>
+            </c:forEach>
+        </div>
         <!-- 如果需要分页器 -->
         <div class="swiper-pagination"></div>
         <!-- 如果需要导航按钮 -->
