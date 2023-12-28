@@ -10,30 +10,6 @@
 <div style="padding: 10px">
 
 
-    <div class="panel panel-default">
-        <div class="panel-heading">
-        <span class="module-name">
-            订单        </span>
-            <span>列表</span>
-        </div>
-        <div class="panel-body">
-            <div class="pa10 bg-warning">
-                <form class="form-inline" action="?"><!-- form 标签开始 -->
-
-                    <div class="form-group">
-
-
-                        <i class="glyphicon glyphicon-search"></i>
-
-                    </div>
-                    <div class="form-group">
-                        订单编号
-
-                        <input type="text" class="form-control" style="" name="dingdanbianhao"
-                               value="${param.dingdanbianhao}"/>
-                    </div>
-                    <div class="form-group">
-                        订单信息
 
 
                     </div>
